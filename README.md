@@ -12,7 +12,7 @@ Run it just once with npx:
 
      npx github:Coruja-Digital/togeojson-cli-latin file.kml
 
-## Instructions for [`tmcw/togeojson-cli`](https://github.com/tmcw/togeojson-cli]
+## Instructions for `tmcw/togeojson-cli`
 
 Install with yarn:
 
