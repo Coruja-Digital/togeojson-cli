@@ -27,7 +27,7 @@ togeojson FILE1 FILE2 FILE3…`);
   process.stdout.write('{\n  "type": "FeatureCollection",\n  "features": [\n');
   let first = true;
   for (let file of argv._) {
-    for (let feature of convert(fs.readFileSync(file, "utf8"))) {
+    for (let feature of convert(fs.readFileSync(file, "iso-8859-1"))) {
       if (!first) {
         process.stdout.write(",\n    ");
       } else {
@@ -41,7 +41,7 @@ togeojson FILE1 FILE2 FILE3…`);
 } else {
   let data = "";
 
-  process.stdin.setEncoding("utf8");
+  process.stdin.setEncoding("iso-8859-1");
 
   process.stdin.on("readable", () => {
     let chunk;
